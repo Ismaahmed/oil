@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <style>
@@ -16,44 +17,73 @@
         }
 
     }
+        @keyframes leftDown {
+        0%{
+            transform: translatex(-50%); opacity: 0;
+        }
+        100%{
+            transform: translatex(0%) ; opacity: 1;
+        }
+
+
+    }
+      @keyframes upDown {
+        0%{
+            transform: translatey(50%); opacity: 0;
+        }
+        100%{
+            transform: translateY(0%) ; opacity: 1;
+        }
+        }
+         @keyframes sk {
+        0%{
+            transform: scale(0);opacity: 0;
+        }
+        100%{
+            transform: scale(1); opacity: 1;
+        }
+        }
 </style>
 
 <body class=" text-white capitalize">
     <nav class="bg-black w-full h-24 fixed z-50 top-0 right-0">
         <div class="container mx-auto px-6 py-6 flex items-center justify-between">
-            <a class="text-2xl font-bold text-[#2ECC71]" href="#home">OLIVE OIL</a>
-            <ul class="flex items-center gap-6 animate-[slideDown]  ease-in-out duration-500 ">
+            <a class="text-2xl font-bold text-[#2ECC71] animate-[leftDown_1s_ease-out_forwards]" href="#home">OLIVE OIL</a>
+            <ul class="lg:flex items-center gap-6 hidden  text-lg">
                 <a href="#home">
-                    <li class="hover:text-[#2ECC71] transition-colors">home</li>
+                    <li class="hover:text-[#2ECC71] transition-colors animate-[slideDown_0.5s_ease-out_forwards] ">home</li>
                 </a>
                 <a href="#home">
-                    <li class="hover:text-[#2ECC71] transition-colors">about </li>
+                    <li class="hover:text-[#2ECC71] transition-colors animate-[slideDown_0.8s_ease-out_forwards] ">about </li>
                 </a>
                 <a href="#home">
-                    <li class="hover:text-[#2ECC71] transition-colors">product</li>
+                    <li class="hover:text-[#2ECC71] transition-colors animate-[slideDown_1.1s_ease-out_forwards] ">product</li>
                 </a>
                 <a href="#home">
-                    <li class="hover:text-[#2ECC71] transition-colors">contact</li>
+                    <li class="hover:text-[#2ECC71] transition-colors animate-[slideDown_1.4s_ease-out_forwards] ">contact</li>
                 </a>
             </ul>
+            <div class="flex lg:hidden" >
+                <i class="fa-solid fa-bars text-2xl hover:text-[#2ECC71] transition-colors animate-[slideDown_1.4s_ease-out_forwards]"></i>
+            </div>
 
         </div>
 
     </nav>
-    <header class="bg-black pt-24 h-screen">
-        <div class="container mx-auto px-6  flex  justify-between py-2 items-center">
-            <div class="max-w-lg space-y-8 ">
-                <h1 class="text-5xl text-[#2ECC71] font-bold leading-relaxed">Nourish Your Body
+    <header class="bg-black pt-24 h-screen ">
+        <div class="container mx-auto px-6  lg:flex  justify-between py-2 items-center">
+            <div class="max-w-lg space-y-8  ">
+                <h1 class="text-3xl md:text-5xl text-[#2ECC71] font-bold leading-relaxed animate-[leftDown_1.5s_ease-out]">Nourish Your Body
                     with Nature's Finest</h1>
-                <p class="opacity-70">Experience the purity of cold-pressed olive oil — a timeless treasure from Mediterranean groves,
+                <p class="opacity-70 animate-[leftDown_1.7s_ease-out]">Experience the purity of cold-pressed olive oil — a timeless treasure from Mediterranean groves,
                     crafted to nourish your soul and elevate your taste.</p>
-                <a class="px-8 text-black text-base font-bold py-3 bg-[#2ECC71] rounded-full w-full sm:w-fit inline-block" href="">Shop now</a>
-                <a class="px-8 ml-2 text-[#2ECC71] text-base font-bold py-3 bg-transparent border border-[#2ECC71] rounded-full w-full sm:w-fit inline-block" href="">learn more</a>
-            </div>
+                <a class="px-8 animate-[leftDown_1.8s_ease-out] text-black text-base font-bold py-3 bg-[#2ECC71] rounded-full w-full sm:w-fit inline-block" href="">Shop now</a>
+                <a class="px-8 animate-[leftDown_1.9s_ease-out] ml-2 text-[#2ECC71] text-base font-bold py-3 bg-transparent border border-[#2ECC71] rounded-full w-full sm:w-fit inline-block" href="">learn more</a>
+                </div>
             <div class="max-w-lg">
                 <figure class="relative">
-                    <img class="" src="./image/olive-oil-premium.jpg" alt="">
-                    <img class="w-48 absolute -left-5   top-2/3" src="./image/Organic.jpg" alt="">
+                    <img class="animate-[upDown_1s_ease-out_forwards]" src="./image/olive-oil-premium.jpg" alt="">
+                    <img class="w-36 lg:w-48 animate-[sk_2s_ease-out] absolute -left-5   top-2/3" src="./image/Organic.jpg" alt="">
                 </figure>
             </div>
 
