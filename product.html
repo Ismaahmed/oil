@@ -1,0 +1,420 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    @keyframes slideDown {
+        0% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0%);
+            opacity: 1;
+        }
+
+    }
+
+    @keyframes leftDown {
+        0% {
+            transform: translatex(-50%);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translatex(0%);
+            opacity: 1;
+        }
+
+
+    }
+
+    @keyframes upDown {
+        0% {
+            transform: translatey(50%);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0%);
+            opacity: 1;
+        }
+    }
+
+    @keyframes sk {
+        0% {
+            transform: scale(0);
+            opacity: 0;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    @keyframes pulse-slow {
+
+        0%,
+        100% {
+            transform: scale(1);
+            box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7);
+
+
+        }
+
+        50% {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px 10px rgba(46, 204, 113, 0.7);
+        }
+
+    }
+
+    .pause:hover {
+        animation-play-state: paused;
+
+
+    }
+</style>
+
+<body class=" text-white capitalize bg-black">
+    <header class=" bg-black flex flex-col  ">
+        <nav class="bg-black/80 backdrop-blur-md w-full  fixed z-50 top-0 h-24 right-0  px-6 py-8">
+            <div class="container mx-auto   flex items-center justify-between">
+                <a class="text-2xl font-bold text-[#2ECC71] animate-[leftDown_1s_ease-out_forwards]"
+                    href="./index.html">OLIVE
+                    OIL</a>
+                <ul class="lg:flex items-center gap-6 hidden  text-lg">
+                    <a href="./index.html">
+                        <li class="hover:text-[#2ECC71] transition-colors animate-[slideDown_0.5s_ease-out_forwards] ">
+                            home</li>
+                    </a>
+                    <a href="./about.html">
+                        <li class="hover:text-[#2ECC71] transition-colors animate-[slideDown_0.8s_ease-out_forwards] ">
+                            about </li>
+                    </a>
+                    <a href="./product.html">
+                        <li class="hover:text-[#2ECC71] transition-colors animate-[slideDown_1.1s_ease-out_forwards] ">
+                            product</li>
+                    </a>
+                    <a href="./contact.html">
+                        <li class="hover:text-[#2ECC71] transition-colors animate-[slideDown_1.4s_ease-out_forwards] ">
+                            contact</li>
+                    </a>
+                </ul>
+                <div class="flex lg:hidden">
+                    <i
+                        class="fa-solid fa-bars text-2xl hover:text-[#2ECC71] transition-colors animate-[slideDown_1.4s_ease-out_forwards]"></i>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+    <main>
+        <section class="mt-20">
+            <div class="container mx-auto px-6 py-16 ">
+                <article class="text-center space-y-3 mb-12 animate-[upDown_1s_ease-out_forwards]  ">
+                    <h2 class="font-bold text-[#2ecc71] text-3xl">Alaabtayna</h2>
+                    <p class="opacity-70 leading-relaxed">Soo ogow noocyada kala duwan ee saliid saytuun tayo sare leh,
+                        mid walbana leh astaamo iyo faa’iidooyin u gaar ah.</p>
+
+                </article>
+                <div class="grid grid-cols-1  lg:grid-cols-3 gap-x-8 gap-y-16 items-stretch">
+                    <div
+                        class="bg-[#0e1730]  rounded-2xl transition-transform duration-300 hover:scale-[1.02] text-start p-8  space-y-4 shadow-[0_0_20px_10px_rgba(46,204,113,0.3)]  animate-[upDown_1.3s_ease-out_forwards]  hover:bg-[#2ECC71]/30">
+                        <img class="object-cover rounded-lg  w-full" src="./image/Extra.jpg" alt="">
+                        <h4 class="text-xl font-bold text-[#2ecc71]">Saliid Saytuun Saafi</h4>
+                        <p class="leading-relaxed opacity-70">saliid saytuun qabow loo cadaadiyey, aan la sifeyn, kana
+                            kooban tayada iyo dhadhanka ugu sarreeya.</p>
+                        <div class="flex items-baseline gap-3">
+                            <i class="fa-solid text-[#2ecc71] fa-check"></i>
+                            <p>Cadaadiskii ugu horreeyey.</p>
+
+                        </div>
+                        <div class="flex items-baseline gap-3">
+                            <i class="fa-solid text-[#2ecc71] fa-check"></i>
+                            <p>Aashito hoose.</p>
+
+                        </div>
+                        <div class="flex items-baseline gap-3">
+                            <i class="fa-solid text-[#2ecc71] fa-check"></i>
+                            <p>Dhadhan basbaas ah oo raaga.</p>
+
+                        </div>
+
+                        <div class="flex justify-between items-baseline">
+                            <h5 class="font-bold text-xl">$29.99</h5>
+                            <a class="w-fit px-8   text-black text-base font-bold hover:bg-transparent hover:text-[#2ECC71] transition-transform text-center hover:scale-105 hover:border hover:border-[#2ECC71] py-3 bg-[#2ECC71] rounded-full    inline-block"
+                                href="">Add to Cart</a>
+
+
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[#0e1730]  rounded-2xl transition-transform duration-300 hover:scale-[1.02] text-start p-8   space-y-4 shadow-[0_0_20px_10px_rgba(46,204,113,0.3)]  animate-[upDown_1.6s_ease-out_forwards]  hover:bg-[#2ECC71]/30">
+                        <img class="object-cover h-[222px] rounded-lg  w-full" src="./image/Organic.jpg" alt="">
+                        <h4 class="text-xl font-bold text-[#2ecc71]">Saliid Saytuun Dabiici</h4>
+                        <p class="leading-relaxed opacity-70"> Saliid saytuun 100% dabiici ah, si waara loo soo saaray,
+                            kana timaadda beeraha Mediterranean-ka.</p>
+                        <div class="flex items-baseline gap-3">
+                            <i class="fa-solid text-[#2ecc71] fa-check"></i>
+                            <p>Shahaado Organic ah.</p>
+
+                        </div>
+                        <div class="flex items-baseline gap-3">
+                            <i class="fa-solid text-[#2ecc71] fa-check"></i>
+                            <p>Xirmo deegaan-u-rogan.</p>
+
+                        </div>
+                        <div class="flex items-baseline gap-3">
+                            <i class="fa-solid text-[#2ecc71] fa-check"></i>
+                            <p>Dhadhan hodan ah.</p>
+
+                        </div>
+
+                        <div class="flex justify-between items-baseline">
+                            <h5 class="font-bold text-xl">$24.99</h5>
+                            <a class="w-fit px-8   text-black text-base font-bold hover:bg-transparent hover:text-[#2ECC71] transition-transform text-center hover:scale-105 hover:border hover:border-[#2ECC71] py-3 bg-[#2ECC71] rounded-full    inline-block"
+                                href="">Add to Cart</a>
+
+
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[#0e1730]  rounded-2xl transition-transform duration-300 hover:scale-[1.02] text-start p-8  space-y-4 shadow-[0_0_20px_10px_rgba(46,204,113,0.3)]  animate-[upDown_1.9s_ease-out_forwards]  hover:bg-[#2ECC71]/30">
+                        <img class="object-cover h-[222px] rounded-lg  w-full" src="./image/Premium.jpg" alt="">
+                        <h4 class="text-xl font-bold text-[#2ecc71]">Isku-dar Heer Sare</h4>
+                        <p class="leading-relaxed opacity-70"> Isku-dar qumman oo ka kooban noocyo kala duwan oo saytuun
+                            ah, kana dhaliya dhadhan aan caadi ahayn.</p>
+                        <div class="flex items-baseline gap-3">
+                            <i class="fa-solid text-[#2ecc71] fa-check"></i>
+                            <p>Tayo La Hubiyey.</p>
+
+                        </div>
+                        <div class="flex items-baseline gap-3">
+                            <i class="fa-solid text-[#2ecc71] fa-check"></i>
+                            <p>Farsamo Qadiimi ah.</p>
+
+                        </div>
+                        <div class="flex items-baseline gap-3">
+                            <i class="fa-solid text-[#2ecc71] fa-check"></i>
+                            <p>Nadiif & Dabiici ah.</p>
+
+                        </div>
+
+                        <div class="flex justify-between items-baseline">
+                            <h5 class="font-bold text-xl">$34.99</h5>
+                            <a class="w-fit px-8   text-black text-base font-bold hover:bg-transparent hover:text-[#2ECC71] transition-transform text-center hover:scale-105 hover:border hover:border-[#2ECC71] py-3 bg-[#2ECC71] rounded-full    inline-block"
+                                href="">Add to Cart</a>
+
+
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[#0e1730]  rounded-2xl transition-transform duration-300 hover:scale-[1.02] text-start p-8  space-y-4 shadow-[0_0_20px_10px_rgba(46,204,113,0.3)]  animate-[upDown_1.3s_ease-out_forwards]  hover:bg-[#2ECC71]/30">
+                        <img class="object-cover rounded-lg  w-full" src="./image/olive-oil-premium.jpg" alt="">
+                        <h4 class="text-xl font-bold text-[#2ecc71]">Saliid Saytuun Lagu Darsay</h4>
+                        <p class="leading-relaxed opacity-70">Saliiddeenna gaarka ah ee saytuunka, oo lagu daray geedo
+                            iyo xawaashyo cusub.</p>
+                        <div class="flex items-baseline gap-3">
+                            <i class="fa-solid text-[#2ecc71] fa-check"></i>
+                            <p>Lagu daray dhir udgoon</p>
+
+                        </div>
+                        <div class="flex items-baseline gap-3">
+                            <i class="fa-solid text-[#2ecc71] fa-check"></i>
+                            <p>Isticmaal badan (karo, dubis, salad).</p>
+
+                        </div>
+                        <div class="flex items-baseline gap-3">
+                            <i class="fa-solid text-[#2ecc71] fa-check"></i>
+                            <p>Tayo cunto-karin sare (Gourmet)</p>
+
+                        </div>
+
+                        <div class="flex justify-between items-baseline">
+                            <h5 class="font-bold text-xl">$19.99</h5>
+                            <a class="w-fit px-8   text-black text-base font-bold hover:bg-transparent hover:text-[#2ECC71] transition-transform text-center hover:scale-105 hover:border hover:border-[#2ECC71] py-3 bg-[#2ECC71] rounded-full    inline-block"
+                                href="">Add to Cart</a>
+
+
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[#0e1730]  rounded-2xl transition-transform duration-300 hover:scale-[1.02] text-start p-8   space-y-4 shadow-[0_0_20px_10px_rgba(46,204,113,0.3)]  animate-[upDown_1.6s_ease-out_forwards]  hover:bg-[#2ECC71]/30">
+                        <img class="object-cover h-[222px] rounded-lg  w-full" src="./image/product-1.jpg" alt="">
+                        <h4 class="text-xl font-bold text-[#2ecc71]">Kaydka Qoyska (Family Reserve)</h4>
+                        <p class="leading-relaxed opacity-70"> Saliid saytuun ah oo xaddidan, lagana soo saaray
+                            beerteenna saytuunka ee ugu fac-weyn.</p>
+                        <div class="flex items-baseline gap-3">
+                            <i class="fa-solid text-[#2ecc71] fa-check"></i>
+                            <p>Tiro xaddidan.</p>
+
+                        </div>
+                        <div class="flex items-baseline gap-3">
+                            <i class="fa-solid text-[#2ecc71] fa-check"></i>
+                            <p>Saytuun bislaaday.</p>
+
+                        </div>
+                        <div class="flex items-baseline gap-3">
+                            <i class="fa-solid text-[#2ecc71] fa-check"></i>
+                            <p>Dhadhan adag oo qoto dheer.</p>
+
+                        </div>
+
+                        <div class="flex justify-between items-baseline">
+                            <h5 class="font-bold text-xl">$49.99</h5>
+                            <a class="w-fit px-8   text-black text-base font-bold hover:bg-transparent hover:text-[#2ECC71] transition-transform text-center hover:scale-105 hover:border hover:border-[#2ECC71] py-3 bg-[#2ECC71] rounded-full    inline-block"
+                                href="">Add to Cart</a>
+
+
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[#0e1730]  rounded-2xl transition-transform duration-300 hover:scale-[1.02] text-start p-8  space-y-4 shadow-[0_0_20px_10px_rgba(46,204,113,0.3)]  animate-[upDown_1.9s_ease-out_forwards]  hover:bg-[#2ECC71]/30">
+                        <img class="object-cover h-[222px] rounded-lg  w-full" src="./image/product-2.jpg" alt="">
+                        <h4 class="text-xl font-bold text-[#2ecc71]">Xulashada Dahabka</h4>
+                        <p class="leading-relaxed opacity-70">Saliid saytuun oo heer sare ah, si gaar ah loo xulay, kana
+                            timid geedo fac weyn oo si taxaddar leh loo daryeelay.</p>
+                        <div class="flex items-baseline gap-3">
+                            <i class="fa-solid text-[#2ecc71] fa-check"></i>
+                            <p>Soo-saar kooban.</p>
+
+                        </div>
+                        <div class="flex items-baseline gap-3">
+                            <i class="fa-solid text-[#2ecc71] fa-check"></i>
+                            <p>Saytuun tayo sare leh.</p>
+
+                        </div>
+                        <div class="flex items-baseline gap-3">
+                            <i class="fa-solid text-[#2ecc71] fa-check"></i>
+                            <p>Dhadhan miisaan leh oo qoto dheer.</p>
+
+                        </div>
+
+                        <div class="flex justify-between items-baseline">
+                            <h5 class="font-bold text-xl">$39.99</h5>
+                            <a class="w-fit px-8   text-black text-base font-bold hover:bg-transparent hover:text-[#2ECC71] transition-transform text-center hover:scale-105 hover:border hover:border-[#2ECC71] py-3 bg-[#2ECC71] rounded-full    inline-block"
+                                href="">Add to Cart</a>
+
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="mt-20">
+            <div class="container mx-auto px-6 py-16 ">
+                <article class="text-center space-y-3 mb-12 animate-[upDown_1.3s_ease-out_forwards]  ">
+                    <h2 class="font-bold text-[#2ecc71] text-3xl">Maxaad u Dooranaysaa Saliiddeena Saytuunka?</h2>
+                   
+                </article>
+                <div class="grid grid-cols-1  lg:grid-cols-3 gap-x-8 gap-y-16 items-center">
+                    <div
+                        class="bg-[#0e1730] rounded-2xl text-start p-8 space-y-3 flex flex-col items-center shadow-[0_0_20px_10px_rgba(46,204,113,0.3)]  animate-[upDown_1.3s_ease-out_forwards] hover:bg-[#2ECC71]/30 transition-all group">
+                        <div class="text-4xl">🌿</div>
+                        <h4 class="text-xl font-bold leading-tight text-[#2ecc71]">Tayo Sare (Premium Quality)</h4>
+                        <p class="leading-relaxed ">Waxaan isticmaalnaa oo keliya saytuunkii ugu wanaagsanaa,
+                            annagoo hirgelinna xakameyn tayo oo adag inta lagu jiro dhammaan habka wax-soo-saarka.</p>
+
+                    </div>
+                    <div
+                        class="bg-[#0e1730] rounded-2xl text-start p-8 space-y-3 flex flex-col items-center shadow-[0_0_20px_10px_rgba(46,204,113,0.3)]  animate-[upDown_1.6s_ease-out_forwards] hover:bg-[#2ECC71]/30 transition-all group">
+                        <div class="text-4xl">🌍</div>
+                        <h4 class="text-xl font-bold leading-tight text-[#2ecc71]">Deegaan-u-Rogan (Sustainable)</h4>
+                        <p class="leading-relaxed "> Hababka beerashada ee aan adeegsanno waa kuwo ilaalinaya
+                            deegaanka, isla markaana taageera beeraleyda iyo bulshooyinka maxalliga ah.</p>
+
+                    </div>
+                    <div
+                        class="bg-[#0e1730] rounded-2xl text-start p-8 space-y-3 flex flex-col items-center shadow-[0_0_20px_10px_rgba(46,204,113,0.3)]  animate-[upDown_1.9s_ease-out_forwards] hover:bg-[#2ECC71]/30 transition-all group">
+                        <div class="text-4xl">🎯</div>
+                        <h4 class="text-xl font-bold leading-tight text-[#2ecc71]">La Raaci Karo (Traceable)</h4>
+                        <p class="leading-relaxed ">Dhalo kasta waa la daba-raaci karaa laga bilaabo halka
+                            laga soo saaray ilaa macaamilka, si loo xaqiijiyo daahfurnaan iyo tayo.</p>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="mt-20">
+        <section class="px-6 py-16">
+            <div class="container mx-auto ">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-between items-stretch gap-8">
+                    <di class="animate-[upDown_1.5s_ease-out_forwards] space-y-4">
+                        <a class="text-2xl font-bold text-[#2ECC71] " href="./index.html">OLIVE
+                            OIL</a>
+                        <p class="leading-relaxed">Premium quality olive oil from the Mediterranean region.</p>
+                    </di>
+                    <div class="animate-[upDown_1.8s_ease-out_forwards] space-y-4 ">
+                        <h5 class="font-bold text-xl">Quick Links</h5>
+                        <ul class="  text-lg">
+
+                            <a href="">
+                                <li class="hover:text-[#2ECC71] transition-colors  ">
+                                    about </li>
+                            </a>
+                            <a href="">
+                                <li class="hover:text-[#2ECC71] transition-colors mt-4  ">
+                                    product</li>
+                            </a>
+                            <a href="">
+                                <li class="hover:text-[#2ECC71] transition-colors mt-4  ">
+                                    contact</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="space-y-4 text-lg animate-[upDown_2s_ease-out_forwards]">
+                        <h5 class="font-bold text-xl">Contact Us</h5>
+                        <p>123 Olive Street</p>
+                        <p>mogdisho city</p>
+                        <p>contact@oliveoil.com</p>
+                        <p>+252 615 000 804</p>
+                    </div>
+                    <div class="space-y-4 text-lg animate-[upDown_2s_ease-out_forwards]">
+                        <h5 class="font-bold text-xl">Wargeyska Cusub</h5>
+                        <p>Isqor si aadan u seegin warar iyo fursado cusub.</p>
+                        <form class="flex flex-col gap-4">
+                            <input class="px-6 py-4 rounded-2xl bg-[#0e1730]" type="email" name=""
+                                placeholder="Gali emailkaga ">
+                            <button class="px-6 py-4 font-bold text-xl bg-[#2ecc71] rounded-2xl text-black"
+                                type="submit">Ku biir</button>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="mt-32">
+                    <div class="max-w-[90rem] h-[2px]   text-center bg-[#0e1730]"></div>
+                    <p class="text-center py-10">&copy; 2025 Olive Oil. All rights reserved.</p>
+                </div>
+
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
