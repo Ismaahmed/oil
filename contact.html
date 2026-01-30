@@ -7,6 +7,8 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
     @keyframes slideDown {
         0% {
@@ -116,119 +118,82 @@
             </div>
 
         </nav>
-        <section class="bg-black  px-6 py-24 flex items-center grow  ">
+        <section class="bg-black  px-6 py-24   ">
             <div class="container mx-auto   ">
                 <h1
-                    class="text-center text-[#2ECC71] mb-5  font-bold text-2xl sm:text-6xl animate-[upDown_1s_ease-out_forwards]">
-                    About Us</h1>
-                <p class=" leading-relaxed text-center sm:text-lg mb-5 animate-[upDown_1.4s_ease-out_forwards]">Baro
-                    sheekadeenna iyo sida ay naga go’an tahay soo
-                    saarista saliid saytuun oo tayadeedu ugu sarrayso.</p>
-                <div class="flex flex-col-reverse lg:flex-row gap-y-20  justify-between  items-center">
-                    <div class="space-y-4 max-w-2xl  text-center  lg:text-start">
-                        <h1
-                            class="text-4xl lg:text-6xl text-[#2ECC71] font-bold leading-tight animate-[leftDown_1.5s_ease-out]">
-                            Dhaxalkeenna</h1>
-                        <p class="animate-[leftDown_1.7s_ease-out] text-base   leading-relaxed">Waxaa la
-                            aasaasay sannadkii 1995, shirkaddan saliid saytuun ee qoyska ahna waxa ay in ka badan 25
-                            sano u heellanayd soo saarista saliid saytuun tayo sare leh. Safarkeenna waxa uu ka bilowday
-                            beeraha Afgooye, halkaas oo geedaha saytuunku si dabiici ah loo beeri jiray muddo dheer.
-                        </p>
-
-                        <p class=" text-base animate-[leftDown_1.9s_ease-out]  leading-relaxed"> Waxaan aaminsanahay
-                            beer-falasho waarta (sustainable farming), waxaana si dhow ula shaqaynaa
-                            beeralayda maxalliga ah si aan u helno saytuun tayo sare leh oo loo adeegsado alaabtayada. U
-                            heelnaanta tayada iyo heer-sareynta ayaa noo suurtagelisay inaan helno abaalmarinno iyo
-                            aqoonsi badan oo dhinaca warshadaha ah.</p>
-
+                    class="text-center text-[#2ECC71] mb-5 leading-tight  font-bold text-2xl sm:text-6xl animate-[upDown_1s_ease-out_forwards]">
+                    Contact Us</h1>
+                <p class=" leading-relaxed  sm:text-lg mb-5 text-center animate-[upDown_1.4s_ease-out_forwards]">Haddii
+                    aad su’aalo ka qabto alaabtayada ama aad rabto dalab jumlo ah, nala soo xiriir.</p>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-7">
+                    <form class="bg-[#0e1730] rounded-lg  p-8 space-y-2 animate-[upDown_1.4s_ease-out_forwards] ">
+                        <h1 class=" text-[#2ECC71] mb-5 leading-tight  font-bold text-3xl ">
+                            Get in Touch</h1>
+                        <label for="name">name</label> <br>
+                        <input
+                            class="w-full px-4 py-2 max-w-xl focus:outline-none focus:ring-2 focus:ring-green-500 border  border-white/20 bg-transparent rounded-md"
+                            type="text" placeholder="magacaaga"> <br> <br>
+                        <label for="name">email</label> <br>
+                        <input
+                            class="w-full px-4 py-2 max-w-xl focus:outline-none focus:ring-2 focus:ring-green-500 border  border-white/20 bg-transparent rounded-md"
+                            type="email" placeholder="emailkaga"> <br> <br>
+                        <label for="msg">message</label> <br>
+                        <textarea
+                            class="w-full px-4 py-2 max-w-xl focus:outline-none focus:ring-2 focus:ring-green-500 border  border-white/20 bg-transparent rounded-md"
+                            placeholder="message"></textarea> <br>
+                        <button
+                            class="w-full  bg-[#2ecc71] hover:bg-transparent hover:text-[#2ECC71] transition-transform hover:shadow-[0_0_20px_10px_rgba(46,204,113,0.7)] text-center hover:scale-105 hover:border hover:border-[#2ECC71] rounded-md font-bold p-3 text-lg capitalize text-black">send
+                            message</button>
+                    </form>
+                    <div class="flex flex-col gap-y-3  animate-[upDown_2s_ease-out_forwards]">
+                        <article class="bg-[#0e1730] p-8 space-y-4  rounded-md">
+                            <h1 class=" text-[#2ECC71] mb-5 leading-tight  font-bold text-2xl sm:text-3xl ">
+                                Contact Information</h1>
+                            <div class="flex gap-3 items-baseline">
+                                <i class="fa-solid fa-location-dot text-green-400"></i>
+                               <div>
+                                 <h6 class="font-bold">Address</h6>
+                                <p>123 Olive Grove Lane, afgooye, 12345</p>
+                               </div>
+                            </div>
+                            <div class="flex gap-3 items-baseline">
+                                <i class="fa-solid fa-phone text-green-400"></i>
+                               <div>
+                                 <h6 class="font-bold">Phone</h6>
+                                <p>+252 615 555 555</p>
+                               </div>
+                            </div>
+                            <div class="flex gap-3 items-baseline">
+                                <i class="fa-solid fa-envelope text-green-400"></i>
+                               <div>
+                                 <h6 class="font-bold">Email</h6>
+                                <p>Oliveoil@gmail.com</p>
+                               </div>
+                            </div>
+                            
+                        </article>
+                         <article class="bg-[#0e1730] p-8 space-y-4  rounded-md">
+                            <h1 class=" text-[#2ECC71] mb-5 leading-tight  font-bold text-2xl sm:text-3xl ">
+                                Business Hoursn</h1>
+                            <div class="flex justify-between items-baseline">
+                                <p>Saturday - Wednesday</p>
+                                <p class="font-bold">9:00 AM - 6:00 PM</p>
+                            </div>
+                            <div class="flex justify-between items-baseline">
+                                <p>Thursday</p>
+                                <p class="font-bold">10:00 AM - 4:00 PM</p>
+                            </div>
+                             <div class="flex justify-between items-baseline">
+                                <p>Friday</p>
+                                <p class="font-bold">Closed</p>
+                            </div>
+                        </article>
                     </div>
-
-                    <figure class="w-full max-w-md lg:max-w-lg  animate-[upDown_2s_ease-out_forwards] ">
-                        <img class="w-full h-auto rounded-2xl object-cover shadow-2xl hover:scale-105 transition-transform duration-500 "
-                            src="./image/olive.jpg" alt="">
-                    </figure>
-
-
-
                 </div>
             </div>
         </section>
     </header>
-    <main>
-        <section class="mt-20">
-            <div class="container mx-auto px-6 py-16 ">
 
-                <div class="grid grid-cols-1  lg:grid-cols-3 gap-x-8 gap-y-16 items-center">
-                    <div
-                        class="bg-[#0e1730] rounded-2xl text-start p-8 space-y-3 shadow-[0_0_20px_10px_rgba(46,204,113,0.3)]  animate-[upDown_1.3s_ease-out_forwards] hover:bg-[#2ECC71]/30 transition-all group">
-                        <div class="text-4xl">🌱</div>
-                        <h4 class="text-xl font-bold leading-tight text-[#2ecc71]">Beer-Falasho Waarta</h4>
-                        <p class="leading-relaxed ">Waxaan adeegsannaa habab beer-falasho oo waara si aan u ilaalinno
-                            deegaanka uguna hubinno in beeraha saytuunka ay sii jiraan muddo dheer.</p>
-
-                    </div>
-                    <div
-                        class="bg-[#0e1730] rounded-2xl text-start p-8 space-y-3 shadow-[0_0_20px_10px_rgba(46,204,113,0.3)]  animate-[upDown_1.6s_ease-out_forwards] hover:bg-[#2ECC71]/30 transition-all group">
-                        <div class="text-4xl">👨‍👩‍👧‍👦</div>
-                        <h4 class="text-xl font-bold leading-tight text-[#2ecc71]">Qiyamka Qoyskas</h4>
-                        <p class="leading-relaxed ">Maaddaama aan nahay ganacsi qoys, waxaan mudnaanta siinnaa tayo,
-                            daacadnimo, iyo qanacsanaanta macaamiisha dhammaan hawlaheenna.</p>
-
-                    </div>
-                    <div
-                        class="bg-[#0e1730] rounded-2xl text-start p-8 space-y-3 shadow-[0_0_20px_10px_rgba(46,204,113,0.3)]  animate-[upDown_1.9s_ease-out_forwards] hover:bg-[#2ECC71]/30 transition-all group">
-                        <div class="text-4xl">🏆</div>
-                        <h4 class="text-xl font-bold leading-tight text-[#2ecc71]">Abaalmarinno La Guddoonsiiyey</h4>
-                        <p class="leading-relaxed ">Saliiddayada saytuunka ah waxay heshay abaalmarinno caalami ah oo
-                            badan, taasoo caddeyn u ah tayadeeda sare iyo dhadhankeeda gaarka ah.</p>
-
-                    </div>
-
-
-
-                </div>
-            </div>
-        </section>
-        <section class="mt-20">
-            <div class="container mx-auto px-6 py-16 ">
-                <h2 class="text-[#2ecc71] text-5xl font-bold text-center animate-[upDown_1s_ease-out_forwards] my-10">Our Team</h2>
-
-                <div class="grid grid-cols-1  lg:grid-cols-3 gap-x-8 gap-y-16 items-center">
-                    
-                    <div
-                        class="bg-[#0e1730] rounded-2xl flex flex-col items-center text-start p-10 space-y-3 shadow-[0_0_20px_10px_rgba(46,204,113,0.3)]  animate-[upDown_1.3s_ease-out_forwards] hover:bg-[#2ECC71]/30 transition-all group">
-                        <figure class="w-32 h-32 ">
-                            <img class=" w-full h-full rounded-full object-cover ring-4 ring-[#2ECC71] ring-offset-4 ring-offset-[#0B1120] border-4 border-[#2ecc71] " src="./image/farhia.jpeg" alt="">
-                        </figure>
-                        <h4 class="text-xl font-bold leading-tight text-[#2ecc71]">Farhia Ahmed</h4>
-                        <p class="leading-relaxed ">Founder & CEO</p>
-
-                    </div>
-                    <div
-                        class="bg-[#0e1730] rounded-2xl flex flex-col items-center text-start p-10 space-y-3 shadow-[0_0_20px_10px_rgba(46,204,113,0.3)]  animate-[upDown_1.3s_ease-out_forwards] hover:bg-[#2ECC71]/30 transition-all group">
-                        <figure class="w-32 h-32 ">
-                            <img class=" w-full h-full rounded-full object-cover ring-4 ring-[#2ECC71] ring-offset-4 ring-offset-[#0B1120] border-4 border-[#2ecc71] " src="./image/omar.jpeg" alt="">
-                        </figure>
-                        <h4 class="text-xl font-bold leading-tight text-[#2ecc71]">omar  Ahmed</h4>
-                        <p class="leading-relaxed ">Master Blender</p>
-
-                    </div>
-                    <div
-                        class="bg-[#0e1730] rounded-2xl flex flex-col items-center text-start p-10 space-y-3 shadow-[0_0_20px_10px_rgba(46,204,113,0.3)]  animate-[upDown_1.3s_ease-out_forwards] hover:bg-[#2ECC71]/30 transition-all group">
-                        <figure class="w-32 h-32 ">
-                            <img class=" w-full h-full rounded-full object-cover ring-4 ring-[#2ECC71] ring-offset-4 ring-offset-[#0B1120] border-4 border-[#2ecc71] " src="./image/Isma.jpeg" alt="">
-                        </figure>
-                        <h4 class="text-xl font-bold leading-tight text-[#2ecc71]">Ismahan Ahmed</h4>
-                        <p class="leading-relaxed ">Quality Control</p>
-
-                    </div>
-
-
-
-                </div>
-            </div>
-        </section>
-    </main>
     <footer class="mt-20">
         <section class="px-6 py-16">
             <div class="container mx-auto ">
