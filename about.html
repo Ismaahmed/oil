@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    @keyframes slideDown {
+        0% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0%);
+            opacity: 1;
+        }
+
+    }
+
+    @keyframes leftDown {
+        0% {
+            transform: translatex(-50%);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translatex(0%);
+            opacity: 1;
+        }
+
+
+    }
+
+    @keyframes upDown {
+        0% {
+            transform: translatey(50%);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0%);
+            opacity: 1;
+        }
+    }
+
+    @keyframes sk {
+        0% {
+            transform: scale(0);
+            opacity: 0;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    @keyframes pulse-slow {
+
+        0%,
+        100% {
+            transform: scale(1);
+            box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7);
+
+
+        }
+
+        50% {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px 10px rgba(46, 204, 113, 0.7);
+        }
+
+    }
+
+    .pause:hover {
+        animation-play-state: paused;
+
+
+    }
+</style>
+
+<body class="bg-black text-white">
+    <header class="min-h-screen bg-black flex flex-col  ">
+        <nav class="bg-black/80 backdrop-blur-md w-full  fixed z-50 top-0 h-24 right-0  px-6 py-8">
+            <div class="container mx-auto   flex items-center justify-between">
+                <a class="text-2xl font-bold text-[#2ECC71] animate-[leftDown_1s_ease-out_forwards]"
+                    href="./index.html">OLIVE
+                    OIL</a>
+                <ul class="lg:flex items-center gap-6 hidden  text-lg">
+                    <a href="./index.html">
+                        <li class="hover:text-[#2ECC71] transition-colors animate-[slideDown_0.5s_ease-out_forwards] ">
+                            home</li>
+                    </a>
+                    <a href="./about.html">
+                        <li class="hover:text-[#2ECC71] transition-colors animate-[slideDown_0.8s_ease-out_forwards] ">
+                            about </li>
+                    </a>
+                    <a href="#home">
+                        <li class="hover:text-[#2ECC71] transition-colors animate-[slideDown_1.1s_ease-out_forwards] ">
+                            product</li>
+                    </a>
+                    <a href="#home">
+                        <li class="hover:text-[#2ECC71] transition-colors animate-[slideDown_1.4s_ease-out_forwards] ">
+                            contact</li>
+                    </a>
+                </ul>
+                <div class="flex lg:hidden">
+                    <i
+                        class="fa-solid fa-bars text-2xl hover:text-[#2ECC71] transition-colors animate-[slideDown_1.4s_ease-out_forwards]"></i>
+                </div>
+
+            </div>
+
+        </nav>
+        <section class="bg-black  px-6 py-24 flex items-center grow  ">
+            <div class="container mx-auto   ">
+                <h1
+                    class="text-center text-[#2ECC71] mb-5  font-bold text-2xl sm:text-6xl animate-[upDown_1s_ease-out_forwards]">
+                    About Us</h1>
+                <p class=" leading-relaxed text-center sm:text-lg mb-5 animate-[upDown_1.4s_ease-out_forwards]">Baro
+                    sheekadeenna iyo sida ay naga go’an tahay soo
+                    saarista saliid saytuun oo tayadeedu ugu sarrayso.</p>
+                <div class="flex flex-col-reverse lg:flex-row gap-y-20  justify-between  items-center">
+                    <div class="space-y-4 max-w-2xl  text-center  lg:text-start">
+                        <h1
+                            class="text-4xl lg:text-6xl text-[#2ECC71] font-bold leading-tight animate-[leftDown_1.5s_ease-out]">
+                            Dhaxalkeenna</h1>
+                        <p class="animate-[leftDown_1.7s_ease-out] text-base   leading-relaxed">Waxaa la
+                            aasaasay sannadkii 1995, shirkaddan saliid saytuun ee qoyska ahna waxa ay in ka badan 25
+                            sano u heellanayd soo saarista saliid saytuun tayo sare leh. Safarkeenna waxa uu ka bilowday
+                            beeraha Afgooye, halkaas oo geedaha saytuunku si dabiici ah loo beeri jiray muddo dheer.
+                        </p>
+
+                        <p class=" text-base animate-[leftDown_1.9s_ease-out]  leading-relaxed"> Waxaan aaminsanahay
+                            beer-falasho waarta (sustainable farming), waxaana si dhow ula shaqaynaa
+                            beeralayda maxalliga ah si aan u helno saytuun tayo sare leh oo loo adeegsado alaabtayada. U
+                            heelnaanta tayada iyo heer-sareynta ayaa noo suurtagelisay inaan helno abaalmarinno iyo
+                            aqoonsi badan oo dhinaca warshadaha ah.</p>
+
+                    </div>
+
+                    <figure class="w-full max-w-md lg:max-w-lg  animate-[upDown_2s_ease-out_forwards] ">
+                        <img class="w-full h-auto rounded-2xl object-cover shadow-2xl hover:scale-105 transition-transform duration-500 "
+                            src="./image/olive.jpg" alt="">
+                    </figure>
+
+
+
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="mt-20">
+            <div class="container mx-auto px-6 py-16 ">
+
+                <div class="grid grid-cols-1  lg:grid-cols-3 gap-x-8 gap-y-16 items-center">
+                    <div
+                        class="bg-[#0e1730] rounded-2xl text-start p-8 space-y-3 shadow-[0_0_20px_10px_rgba(46,204,113,0.3)]  animate-[upDown_1.3s_ease-out_forwards] hover:bg-[#2ECC71]/30 transition-all group">
+                        <div class="text-4xl">🌱</div>
+                        <h4 class="text-xl font-bold leading-tight text-[#2ecc71]">Beer-Falasho Waarta</h4>
+                        <p class="leading-relaxed ">Waxaan adeegsannaa habab beer-falasho oo waara si aan u ilaalinno
+                            deegaanka uguna hubinno in beeraha saytuunka ay sii jiraan muddo dheer.</p>
+
+                    </div>
+                    <div
+                        class="bg-[#0e1730] rounded-2xl text-start p-8 space-y-3 shadow-[0_0_20px_10px_rgba(46,204,113,0.3)]  animate-[upDown_1.6s_ease-out_forwards] hover:bg-[#2ECC71]/30 transition-all group">
+                        <div class="text-4xl">👨‍👩‍👧‍👦</div>
+                        <h4 class="text-xl font-bold leading-tight text-[#2ecc71]">Qiyamka Qoyskas</h4>
+                        <p class="leading-relaxed ">Maaddaama aan nahay ganacsi qoys, waxaan mudnaanta siinnaa tayo,
+                            daacadnimo, iyo qanacsanaanta macaamiisha dhammaan hawlaheenna.</p>
+
+                    </div>
+                    <div
+                        class="bg-[#0e1730] rounded-2xl text-start p-8 space-y-3 shadow-[0_0_20px_10px_rgba(46,204,113,0.3)]  animate-[upDown_1.9s_ease-out_forwards] hover:bg-[#2ECC71]/30 transition-all group">
+                        <div class="text-4xl">🏆</div>
+                        <h4 class="text-xl font-bold leading-tight text-[#2ecc71]">Abaalmarinno La Guddoonsiiyey</h4>
+                        <p class="leading-relaxed ">Saliiddayada saytuunka ah waxay heshay abaalmarinno caalami ah oo
+                            badan, taasoo caddeyn u ah tayadeeda sare iyo dhadhankeeda gaarka ah.</p>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+        <section class="mt-20">
+            <div class="container mx-auto px-6 py-16 ">
+                <h2 class="text-[#2ecc71] text-5xl font-bold text-center animate-[upDown_1s_ease-out_forwards] my-10">Our Team</h2>
+
+                <div class="grid grid-cols-1  lg:grid-cols-3 gap-x-8 gap-y-16 items-center">
+                    
+                    <div
+                        class="bg-[#0e1730] rounded-2xl flex flex-col items-center text-start p-10 space-y-3 shadow-[0_0_20px_10px_rgba(46,204,113,0.3)]  animate-[upDown_1.3s_ease-out_forwards] hover:bg-[#2ECC71]/30 transition-all group">
+                        <figure class="w-32 h-32 ">
+                            <img class=" w-full h-full rounded-full object-cover ring-4 ring-[#2ECC71] ring-offset-4 ring-offset-[#0B1120] border-4 border-[#2ecc71] " src="./image/farhia.jpeg" alt="">
+                        </figure>
+                        <h4 class="text-xl font-bold leading-tight text-[#2ecc71]">Farhia Ahmed</h4>
+                        <p class="leading-relaxed ">Founder & CEO</p>
+
+                    </div>
+                    <div
+                        class="bg-[#0e1730] rounded-2xl flex flex-col items-center text-start p-10 space-y-3 shadow-[0_0_20px_10px_rgba(46,204,113,0.3)]  animate-[upDown_1.3s_ease-out_forwards] hover:bg-[#2ECC71]/30 transition-all group">
+                        <figure class="w-32 h-32 ">
+                            <img class=" w-full h-full rounded-full object-cover ring-4 ring-[#2ECC71] ring-offset-4 ring-offset-[#0B1120] border-4 border-[#2ecc71] " src="./image/omar.jpeg" alt="">
+                        </figure>
+                        <h4 class="text-xl font-bold leading-tight text-[#2ecc71]">omar  Ahmed</h4>
+                        <p class="leading-relaxed ">Master Blender</p>
+
+                    </div>
+                    <div
+                        class="bg-[#0e1730] rounded-2xl flex flex-col items-center text-start p-10 space-y-3 shadow-[0_0_20px_10px_rgba(46,204,113,0.3)]  animate-[upDown_1.3s_ease-out_forwards] hover:bg-[#2ECC71]/30 transition-all group">
+                        <figure class="w-32 h-32 ">
+                            <img class=" w-full h-full rounded-full object-cover ring-4 ring-[#2ECC71] ring-offset-4 ring-offset-[#0B1120] border-4 border-[#2ecc71] " src="./image/Isma.jpeg" alt="">
+                        </figure>
+                        <h4 class="text-xl font-bold leading-tight text-[#2ecc71]">Ismahan Ahmed</h4>
+                        <p class="leading-relaxed ">Quality Control</p>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="mt-20">
+        <section class="px-6 py-16">
+            <div class="container mx-auto ">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-between items-stretch gap-8">
+                    <di class="animate-[upDown_1.5s_ease-out_forwards] space-y-4">
+                        <a class="text-2xl font-bold text-[#2ECC71] " href="./index.html">OLIVE
+                            OIL</a>
+                        <p class="leading-relaxed">Premium quality olive oil from the Mediterranean region.</p>
+                    </di>
+                    <div class="animate-[upDown_1.8s_ease-out_forwards] space-y-4 ">
+                        <h5 class="font-bold text-xl">Quick Links</h5>
+                        <ul class="  text-lg">
+
+                            <a href="">
+                                <li class="hover:text-[#2ECC71] transition-colors  ">
+                                    about </li>
+                            </a>
+                            <a href="">
+                                <li class="hover:text-[#2ECC71] transition-colors mt-4  ">
+                                    product</li>
+                            </a>
+                            <a href="">
+                                <li class="hover:text-[#2ECC71] transition-colors mt-4  ">
+                                    contact</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="space-y-4 text-lg animate-[upDown_2s_ease-out_forwards]">
+                        <h5 class="font-bold text-xl">Contact Us</h5>
+                        <p>123 Olive Street</p>
+                        <p>mogdisho city</p>
+                        <p>contact@oliveoil.com</p>
+                        <p>+252 615 000 804</p>
+                    </div>
+                    <div class="space-y-4 text-lg animate-[upDown_2s_ease-out_forwards]">
+                        <h5 class="font-bold text-xl">Wargeyska Cusub</h5>
+                        <p>Isqor si aadan u seegin warar iyo fursado cusub.</p>
+                        <form class="flex flex-col gap-4">
+                            <input class="px-6 py-4 rounded-2xl bg-[#0e1730]" type="email" name=""
+                                placeholder="Gali emailkaga ">
+                            <button class="px-6 py-4 font-bold text-xl bg-[#2ecc71] rounded-2xl text-black"
+                                type="submit">Ku biir</button>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="mt-32">
+                    <div class="max-w-[90rem] h-[2px]   text-center bg-[#0e1730]"></div>
+                    <p class="text-center py-10">&copy; 2025 Olive Oil. All rights reserved.</p>
+                </div>
+
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>
